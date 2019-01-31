@@ -1,0 +1,36 @@
+application {
+  config {
+  	// ################application options################
+    applicationType monolith // monolith, microservice, gateway, uaa
+    baseName myapp
+    packageName org.jhipster.myapp
+    authenticationType jwt // jwt, session, uaa, oauth2
+    buildTool maven // maven, gradle
+    databaseType sql // sql, mongodb, cassandra, couchbase, no
+    devDatabaseType h2Disk // h2Disk, h2Memory, *
+    prodDatabaseType mysql // mysql, mariadb, mssql, postgresql, oracle, no
+    cacheProvider ehcache // ehcache, hazelcast, infinispan, no
+    enableHibernateCache true
+    clientFramework angularX // angularX, react
+    useSass	false
+    clientPackageManager npm // npm, yarn
+    entitySuffix false
+    dtoSuffix DTO
+    jhiPrefix jhi
+    enableTranslation true
+    nativeLanguage zh-cn
+    languages [en, zh-cn, zh-tw]
+    enableSwaggerCodegen true
+    messageBroker false // kafka, false
+    searchEngine elasticsearch // elasticsearch, false
+    serverPort 8080
+    websocket spring-websocket // spring-websocket, false
+    testFrameworks [protractor, cucumber, gatling] // protractor, cucumber, gatling
+    //skipClient false		
+	//skipServer false		
+	//skipUserManagement false
+    // ################deployment options################
+    //monitoring no // no, elk, prometheus
+    
+  }
+}
